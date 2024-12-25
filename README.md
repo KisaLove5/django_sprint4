@@ -28,6 +28,7 @@
 
 
 *** Пошаговая установка
+
 Создать и активировать виртуальное окружение:
 python -m venv venv
 source venv/bin/activate
