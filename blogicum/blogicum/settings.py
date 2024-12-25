@@ -6,7 +6,7 @@ SECRET_KEY = (
     "django-insecure-xvs)n!0rbplko$bacru_9%mw!fu@nt$(yhwma-@=c%32r^x!x0"
 )
 
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     "localhost",
@@ -106,9 +106,13 @@ STATICFILES_DIRS = [
     BASE_DIR / "static",
 ]
 
+STATIC_ROOT = BASE_DIR / "staticfiles"
+
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-MEDIA_ROOT = BASE_DIR / "media"
+MEDIA_URL = '/media/'
+
+MEDIA_ROOT = BASE_DIR / 'media'
 
 EMAIL_BACKEND = "django.core.mail.backends.filebased.EmailBackend"
 
